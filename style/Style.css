@@ -1,0 +1,130 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --more-padding: 2.5rem;
+  --main-color: #1e202b;
+  --secnd-main-color:#0000001a;
+  --third-color:#BFC1C8;
+}
+
+.secnd-color {
+  background-color: #2a2d3f;
+}
+.short-text-color {
+  color: var(--third-color);
+}
+
+/* Start Nav */
+nav {
+  background-color: var(--main-color);
+}
+.small-font {
+  font-size: 0.875rem;
+  color: var(--third-color);
+}
+nav i {
+  color: #74c0fc;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    align-content: space-between;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: var(--more-padding);
+    padding-left: var(--more-padding);
+  }
+}
+
+input {
+  background-color: var(--main-color);
+  border: none;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+
+/* End Nav  */
+
+/* Start Section mainBody  */
+.naturla-img {
+  background-image: url("../imges/banner.png");
+  background-size: cover;
+  min-height: 350px;
+}
+.naturla-img i {
+  font-size: 2.813rem;
+  cursor: pointer;
+}
+
+/* Start Cards  */
+.days {
+  background-color: var(--secnd-main-color);
+}
+.weather h1 {
+  font-size: 5.625rem;
+}
+.more-info-at-weather {
+  font-size: 1.25rem;
+}
+.more-info-at-weather i {
+  font-size: 1.25rem;
+}
+
+
+
+/* End Cards */
+/* End Section mainBody  */
+
+.add-background {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 1199px) {
+  .add-background {
+      min-height: 200vh; /* Adjust as needed for computer view */
+  }
+}
+
+@media (min-width: 1200px) {
+  .add-background {
+      min-height: 350px; /* Adjust as needed for mobile view */
+  }
+}
+
+
+
+/* Satrt Footer */
+
+footer {
+  /* background-color: var(--secnd-main-color); */
+  background-color: #0000001a;
+}
+
+.icons i {
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 1.8;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+}
+
+.icons i:hover{
+  background: #009ad8;
+    color: white;
+}
+
+/* End Footer */
